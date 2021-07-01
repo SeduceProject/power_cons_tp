@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
  
-double pi(unsigned long itNb)
-{
+double pi(unsigned long itNb) {
 	double x, y, val, error;
 	unsigned long inCircle, i;
  
@@ -17,8 +16,7 @@ double pi(unsigned long itNb)
 	return val;
 }
  
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
 	char* end;
 	unsigned long nbIteration = strtol(argv[1], &end, 10);
 	printf("Valeur de Pi    : 3,141592653589793238462643383279\n");

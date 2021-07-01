@@ -1,6 +1,6 @@
 public class MonteCarlo {
 	public static void main(String[] args) {
-        int nbIteration = Integer.parseInt(args[0]);
+		int nbIteration = Integer.parseInt(args[0]);
 		System.out.println("Valeur de Pi    : 3,141592653589793238462643383279");
 		System.out.println("Valeur calculee : " + getPi(nbIteration) + " apres " + nbIteration + " iterations");
 	}
@@ -14,6 +14,6 @@ public class MonteCarlo {
 				inCircle++;
 			}
 		}
-		return 4.0 * inCircle / numThrows;
+		return 4.0 * inCircle / itNb;
 	}
 }
