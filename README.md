@@ -94,6 +94,6 @@ apt install -y ocaml-nox openjdk-11-jdk vim
   * Compilation : `time ocamlc -o hanoi hanoi.ml`
   * Execution : ./hanoi
   * Temps d'execution (iterations / temps)
-    * 5000000   / 9 s
-    * 50000000  / 90 s
-    * 500000000 / N/A
+    * 22   / 9 s
+    * 24  / 6 s
+    * 26 / 24 s
