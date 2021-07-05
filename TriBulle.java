@@ -1,15 +1,22 @@
-import java.util.Random;
-
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class TriBulle {
 	public static void main(String[] args) {
-		int dataMax = 1000;
 		int dataSize = Integer.parseInt(args[0]);
 		int[] data = new int[dataSize];
 		int i, j, tmp;
-		Random rand = new Random();
-		for (i = 0; i < dataSize; i++) {
-			data[i] = rand.nextInt(dataMax);
+		System.out.println("======== Lecture des donnees ========");
+		BufferedReader reader;
+		try {
+			reader = new BufferedReader(new FileReader("numbers.txt"));
+			for (i = 0; i < dataSize; i++) {
+				data[i] = Integer.parseInt(reader.readLine());
+			}
+			reader.close();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 		System.out.println("======== donnees non triees ========");
 		System.out.println("premier element: " + data[0]);
